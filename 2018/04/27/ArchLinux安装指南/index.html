@@ -102,20 +102,25 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LiYupeng&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="ArchLinux是一个轻量极的linux发行版，体积短小精悍。不提供图形版的安装界面，所有安装过程都要通过命令行来操作，非常具有可玩性。是用来学习的最佳良伴。 下面来分享如何安装ArchLinux: 安装准备Arch Linux 能在任何内存空间不小于 512MB 的 x86_64 兼容机上运行。用 base 组内的软件包进行的基本安装将占用小于 800MB 的存储空间。由于安装过程中需要从远程">
+<meta name="keywords" content="ArchLinux,Linux,OS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ArchLinux安装指南">
+<meta property="og:url" content="http://yoursite.com/2018/04/27/ArchLinux安装指南/index.html">
 <meta property="og:site_name" content="LiYupeng&#39;s Blog">
+<meta property="og:description" content="ArchLinux是一个轻量极的linux发行版，体积短小精悍。不提供图形版的安装界面，所有安装过程都要通过命令行来操作，非常具有可玩性。是用来学习的最佳良伴。 下面来分享如何安装ArchLinux: 安装准备Arch Linux 能在任何内存空间不小于 512MB 的 x86_64 兼容机上运行。用 base 组内的软件包进行的基本安装将占用小于 800MB 的存储空间。由于安装过程中需要从远程">
 <meta property="og:locale" content="zh_Hans">
+<meta property="og:updated_time" content="2018-04-27T14:09:15.387Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LiYupeng&#39;s Blog">
+<meta name="twitter:title" content="ArchLinux安装指南">
+<meta name="twitter:description" content="ArchLinux是一个轻量极的linux发行版，体积短小精悍。不提供图形版的安装界面，所有安装过程都要通过命令行来操作，非常具有可玩性。是用来学习的最佳良伴。 下面来分享如何安装ArchLinux: 安装准备Arch Linux 能在任何内存空间不小于 512MB 的 x86_64 兼容机上运行。用 base 组内的软件包进行的基本安装将占用小于 800MB 的存储空间。由于安装过程中需要从远程">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/27/ArchLinux安装指南/"/>
 
 
 
@@ -125,7 +130,7 @@
   };
 </script>
 
-  <title>LiYupeng's Blog</title>
+  <title>ArchLinux安装指南 | LiYupeng's Blog</title>
   
 
 
@@ -172,8 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,7 +217,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
   </li>
@@ -265,9 +269,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -299,11 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/27/ArchLinux安装指南/" itemprop="url">
-                  ArchLinux安装指南
-                </a>
+          <h1 class="post-title" itemprop="name headline">ArchLinux安装指南
               
             
           </h1>
@@ -366,9 +366,7 @@
       
 
       
-        
-          
-            <p><font size="5">ArchLinux</font>是一个轻量极的linux发行版，体积短小精悍。不提供图形版的安装界面，所有安装过程都要通过命令行来操作，非常具有可玩性。是用来学习的最佳良伴。</p>
+        <p><font size="5">ArchLinux</font>是一个轻量极的linux发行版，体积短小精悍。不提供图形版的安装界面，所有安装过程都要通过命令行来操作，非常具有可玩性。是用来学习的最佳良伴。</p>
 <p>下面来分享如何安装ArchLinux:</p>
 <h1 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h1><p><font size="5">Arch Linux</font> 能在任何内存空间不小于 512MB 的 x86_64 兼容机上运行。用 base 组内的软件包进行的基本安装将占用小于 800MB 的存储空间。由于安装过程中需要从远程存储库获取软件包，机器将需要一个有效的互联网连接。</p>
 <p>根据 Category:Getting and installing Arch 中所述，下载并引导安装介质。启动完成后将会自动以 root 身份登录虚拟控制台并进入zsh命令提示符。类似 systemctl(1) 的常规命令都可以用 Tab 自动补全。</p>
@@ -442,8 +440,6 @@
 <p>grub-mkconfig -o /boot/grub/grub.cfg</p>
 </blockquote>
 
-          
-        
       
     </div>
 
@@ -461,300 +457,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/27/MacOS上如何使ffmpeg支持x265/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LiYupeng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LiYupeng's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/27/MacOS上如何使ffmpeg支持x265/" itemprop="url">
-                  MacOS上如何使ffmpeg支持x265
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-04-27 21:50:56 / Updated at: 21:53:10" itemprop="dateCreated datePublished" datetime="2018-04-27T21:50:56+08:00">2018-04-27</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/ArchLinux/" rel="tag"># ArchLinux</a>
           
-            
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
-
+            <a href="/tags/OS/" rel="tag"># OS</a>
           
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>使用brew install ffmpeg 安装ffmpeg默认是没有支持x265的， 使用brew info ffmpeg 获取安装选项帮助，</p>
-<p>使用brew reinstall ffmpeg –with-x265 重新安装即可。</p>
-<p><a href="http://trac.ffmpeg.org/wiki/CompilationGuide/MacOSX" target="_blank" rel="noopener">参考</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/27/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LiYupeng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LiYupeng's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/27/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/04/27/MacOS上如何使ffmpeg支持x265/" rel="next" title="MacOS上如何使ffmpeg支持x265">
+                <i class="fa fa-chevron-left"></i> MacOS上如何使ffmpeg支持x265
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-04-27 21:00:50" itemprop="dateCreated datePublished" datetime="2018-04-27T21:00:50+08:00">2018-04-27</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -764,14 +500,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -792,8 +533,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -876,6 +626,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装准备"><span class="nav-number">1.</span> <span class="nav-text">安装准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#loadkeys-layout"><span class="nav-number">2.</span> <span class="nav-text">loadkeys layout</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#验证启动模式"><span class="nav-number">3.</span> <span class="nav-text">验证启动模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#建立硬盘分区"><span class="nav-number">4.</span> <span class="nav-text">建立硬盘分区</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#fdisk-l"><span class="nav-number">5.</span> <span class="nav-text">fdisk -l</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mkfs-ext4-dev-sda1"><span class="nav-number">6.</span> <span class="nav-text">mkfs.ext4 /dev/sda1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mount-dev-sda1-mnt"><span class="nav-number">7.</span> <span class="nav-text">mount /dev/sda1 /mnt</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mkdir-mnt-boot"><span class="nav-number">8.</span> <span class="nav-text">mkdir /mnt/boot</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mount-dev-sda2-mnt-boot"><span class="nav-number">9.</span> <span class="nav-text">mount /dev/sda2 /mnt/boot</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pacstrap-mnt-base"><span class="nav-number">10.</span> <span class="nav-text">pacstrap /mnt base</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pacstrap-i-mnt-base-base-devel"><span class="nav-number">11.</span> <span class="nav-text">pacstrap -i /mnt base base-devel</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#genfstab-U-mnt-gt-gt-mnt-etc-fstab"><span class="nav-number">12.</span> <span class="nav-text">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#arch-chroot-mnt"><span class="nav-number">13.</span> <span class="nav-text">arch-chroot /mnt</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ln-sf-usr-share-zoneinfo-zone-subzone-etc-localtime"><span class="nav-number">14.</span> <span class="nav-text">ln -sf /usr/share/zoneinfo/zone/subzone /etc/localtime</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ln-sf-usr-share-zoneinfo-Asia-Shanghai-etc-localtime"><span class="nav-number">15.</span> <span class="nav-text">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hwclock-–systohc-–utc"><span class="nav-number">16.</span> <span class="nav-text">hwclock –systohc –utc</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nano-etc-locale-gen"><span class="nav-number">17.</span> <span class="nav-text">nano /etc/locale.gen</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#locale-gen"><span class="nav-number">18.</span> <span class="nav-text">locale-gen</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#echo-LANG-en-US-UTF-8-gt-etc-locale-conf"><span class="nav-number">19.</span> <span class="nav-text">echo LANG=en_US.UTF-8 &gt; /etc/locale.conf</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#echo-myhostname-gt-etc-hostname"><span class="nav-number">20.</span> <span class="nav-text">echo myhostname &gt; /etc/hostname</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mkinitcpio-p-linux"><span class="nav-number">21.</span> <span class="nav-text">mkinitcpio -p linux</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#passwd"><span class="nav-number">22.</span> <span class="nav-text">passwd</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装并配置-bootloader"><span class="nav-number">23.</span> <span class="nav-text">安装并配置 bootloader</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1003,6 +769,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
 
   
 
