@@ -8,7 +8,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh_Hans">
+<html class="theme-next mist use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -109,8 +109,8 @@
 <meta property="og:url" content="http://yoursite.com/2018/04/27/ArchLinux安装指南/index.html">
 <meta property="og:site_name" content="LiYupeng&#39;s Blog">
 <meta property="og:description" content="ArchLinux是一个轻量极的linux发行版，体积短小精悍。不提供图形版的安装界面，所有安装过程都要通过命令行来操作，非常具有可玩性。是用来学习的最佳良伴。 下面来分享如何安装ArchLinux: 安装准备Arch Linux 能在任何内存空间不小于 512MB 的 x86_64 兼容机上运行。用 base 组内的软件包进行的基本安装将占用小于 800MB 的存储空间。由于安装过程中需要从远程">
-<meta property="og:locale" content="zh_Hans">
-<meta property="og:updated_time" content="2018-04-27T14:09:15.387Z">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-04-27T14:14:56.270Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ArchLinux安装指南">
 <meta name="twitter:description" content="ArchLinux是一个轻量极的linux发行版，体积短小精悍。不提供图形版的安装界面，所有安装过程都要通过命令行来操作，非常具有可玩性。是用来学习的最佳良伴。 下面来分享如何安装ArchLinux: 安装准备Arch Linux 能在任何内存空间不小于 512MB 的 x86_64 兼容机上运行。用 base 组内的软件包进行的基本安装将占用小于 800MB 的存储空间。由于安装过程中需要从远程">
@@ -170,7 +170,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh_Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -219,7 +219,7 @@
           
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
   </li>
         
         
@@ -235,7 +235,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
   </li>
 
       
@@ -321,14 +321,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="Post created: 2018-04-27 22:08:09 / Updated at: 22:09:15" itemprop="dateCreated datePublished" datetime="2018-04-27T22:08:09+08:00">2018-04-27</time>
+              <time title="Created: 2018-04-27 22:08:09 / Modified: 22:14:56" itemprop="dateCreated datePublished" datetime="2018-04-27T22:08:09+08:00">2018-04-27</time>
             
 
             
@@ -370,8 +370,7 @@
 <p>下面来分享如何安装ArchLinux:</p>
 <h1 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h1><p><font size="5">Arch Linux</font> 能在任何内存空间不小于 512MB 的 x86_64 兼容机上运行。用 base 组内的软件包进行的基本安装将占用小于 800MB 的存储空间。由于安装过程中需要从远程存储库获取软件包，机器将需要一个有效的互联网连接。</p>
 <p>根据 Category:Getting and installing Arch 中所述，下载并引导安装介质。启动完成后将会自动以 root 身份登录虚拟控制台并进入zsh命令提示符。类似 systemctl(1) 的常规命令都可以用 Tab 自动补全。</p>
-<p>如果你想切换至其它的虚拟终端来干点别的事, 例如使用 ELinks 来查看本篇指南，使用 Alt+arrow 快捷键。可以使用 nano，vi 或 vim 编辑配置文件。</p>
-<p>键盘布局<br>控制台键盘布局 默认为us（美式键盘映射）。如果您正在使用非美式键盘布局，通过以下的命令选择相应的键盘映射表：</p>
+<p>如果你想切换至其它的虚拟终端来干点别的事, 例如使用 ELinks 来查看本篇指南，使用 Alt+arrow 快捷键。可以使用 nano，vi 或 vim 编辑配置文件。<br><a id="more"></a><br>键盘布局<br>控制台键盘布局 默认为us（美式键盘映射）。如果您正在使用非美式键盘布局，通过以下的命令选择相应的键盘映射表：</p>
 <h1 id="loadkeys-layout"><a href="#loadkeys-layout" class="headerlink" title="loadkeys layout"></a>loadkeys layout</h1><p>将layout转换为您的键盘布局, 如fr, uk, dvorak或be-latin1. 这里有国家的二位字母编码表。使用命令ls /usr/share/kbd/keymaps/*<em>/</em>.map.gz 列出所有可用的键盘布局。</p>
 <p>Console fonts 位于 /usr/share/kbd/consolefonts/, 设置方式参考 setfont(8).</p>
 <h1 id="验证启动模式"><a href="#验证启动模式" class="headerlink" title="验证启动模式"></a>验证启动模式</h1><p>如果以在 UEFI 主板上启用 UEFI 模式, Archiso 将会使用 systemd-boot 来启动 Arch Linux。可以列出 efivars 目录以验证启动模式:</p>
@@ -535,10 +534,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -559,7 +558,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -592,7 +591,7 @@
                       
                     
                     <span class="site-state-item-count">9</span>
-                    <span class="site-state-item-name">Tags</span>
+                    <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
               
@@ -670,7 +669,7 @@
 
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
